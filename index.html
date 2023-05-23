@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cadbury_%282020%29.svg/1200px-Cadbury_%282020%29.svg.png">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">periodic survey for feedback </p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter your name : <input id="name" type="text" placeholder="name" required /></label>
+      <label for="email" id="email-label">Enter your email id : <input id="email" type="email" placeholder="email" required /></label>
+      <div>
+       <label>enter your gender</label>
+       <div class="container">
+      <label for="male"> <input id="male" type="radio" name="gender" value="male" class="inline"/>Male</label>
+      </div>
+      <div class="container">
+      <label for="female"> <input id="female" type="radio" name="gender" value="female" class="inline"/> Female</label>
+      </div>
+      <div class="container">
+      <label for="female"><input id="others" type="radio" name="gender" value="others" class="inline"/> Others</label>
+      </div>
+      </div>
+      <label for="number" id="number-label">Enter your age : <input id="number" type="number"  min="18" max="100" placeholder="age" required/></label>
+    
+<div>
+<label>Which product do you like the most ?</label>
+<div class="container">
+<label><input type="checkbox" name="hobby" value="dm" class="inline"/>Dairy Milk : </label>
+</div>
+<div class="container">
+<label><input type="checkbox"name="hobby" value="bv" class="inline" />Bournville : </label>
+</div>
+<div class="container">
+<label><input type="checkbox" name="hobby" value="cook" class="inline" />Silk  : </label>
+</div>
+</div>
+<label for="dropdown"> How did you hear about our product ?
+        <select id="dropdown">
+          <option value="">select any</option>
+          <option value="1">newspaper</option>
+          <option value="2">internet</option>
+          <option value="3">friends</option>
+          <option value="4">advertisement</option>
+          </select>
+          </label>
+<label>Any other suggestions
+<textarea placeholder="enter your feedback"></textarea></label>
+
+      <input id="submit" type="Submit"/>
+    </fieldset>
+  </form>
+</body>
+<footer>developed with love by : <a href="https://github.com/grnair2">grnair2</a>
+  </footer>
+</html>
